@@ -75,3 +75,65 @@ git clone &lt;repository-url&gt;
 <p>Feel free to submit issues or pull requests if you encounter bugs or have suggestions for improvements.</p>
 <p>License:</p>
 <p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
+
+
+<h1>Brain Tumor ChatBot</h1>
+<p>This project is a Streamlit-based web application that allows users to interact with a chatbot designed to provide insights related to brain tumors. The chatbot leverages the Google Gemini 1.5 Pro or Flash model for generating responses based on user queries and the content of a provided PDF document.</p>
+<h2>Features</h2>
+<ul>
+<li>Model Selection: Users can choose between different versions of the Gemini model (e.g., Gemini 1.5 Flash, Gemini 1.5 Pro).</li>
+<li>PDF Interaction: Extracts text and images from a PDF file and uses the text to generate relevant responses.</li>
+<li>Customizable Parameters: Users can adjust parameters like temperature, top-p, and max tokens for fine-tuning the model’s responses.</li>
+<li>Image Display: Displays images extracted from the PDF document.</li>
+</ul>
+<h2>Prerequisites</h2>
+<ul>
+<li>Python 3.8 or higher</li>
+<li><a href="https://streamlit.io/">Streamlit</a></li>
+<li><a href="https://developers.generativeai.google/">Google Generative AI SDK</a></li>
+<li><a href="https://pymupdf.readthedocs.io/">PyMuPDF (fitz)</a></li>
+<li><a href="https://pypdf.readthedocs.io/">pypdf</a></li>
+<li><a href="https://pillow.readthedocs.io/">Pillow</a></li>
+</ul>
+<h2>Installation</h2>
+<p>1.Clone the Repository:</p>
+<h2>Code</h2>
+<pre><code>git clone https://github.com/your_username/brain-tumor-chatbot.git
+</code></pre>
+<ul>
+<li>cd brain-tumor-chatbot</li>
+</ul>
+<p>2.Install the required Python packages</p>
+<ul>
+<li>pip install streamlit google-generativeai pypdf pymupdf pillow</li>
+</ul>
+<p>3.Set up your Google API key by exporting it as an environment variable:</p>
+<ul>
+<li>Set your Google API key as an environment variable</li>
+</ul>
+<pre><code class="hljs">export GOOGLE_API_KEY=your_google_api_key
+</code></pre>
+<p>For Windows:</p>
+<pre><code class="hljs">set GOOGLE_API_KEY=your_google_api_key
+</code></pre>
+<p>Usage:</p>
+<p>1.Update the path variables in the code to match your local file system:
+python</p>
+<pre><code class="hljs">path2 = '/Users/your_username/your_directory'
+pdf_file_path = 'D:/Projects/Brain_Tumour/brain_tumor_pdf.pdf'
+</code></pre>
+<p>2.Run the Streamlit app:</p>
+<pre><code class="hljs">streamlit run app.py
+</code></pre>
+<p>3.Open your web browser and go to the provided local URL (usually <a href="http://localhost:8501">http://localhost:8501</a>).</p>
+<p>4.Upload a PDF, enter a question related to the document, and click “Submit” to receive a response from the chatbot.</p>
+<p>License</p>
+<p>This project is licensed under the MIT License. See the LICENSE file for more details.</p>
+<p>Acknowledgements</p>
+<ul>
+<li>Streamlit</li>
+<li>Google Generative AI</li>
+<li>PyMuPDF</li>
+<li>pypdf</li>
+<li>Pillow</li>
+</ul>
