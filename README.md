@@ -78,6 +78,7 @@ git clone &lt;repository-url&gt;
 
 
 <h1>Brain Tumor ChatBot</h1>
+
 <p>This project is a Streamlit-based web application that allows users to interact with a chatbot designed to provide insights related to brain tumors. The chatbot leverages the Google Gemini 1.5 Pro or Flash model for generating responses based on user queries and the content of a provided PDF document.</p>
 <h2>Features</h2>
 <ul>
